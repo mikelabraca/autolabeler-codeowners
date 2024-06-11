@@ -25,10 +25,11 @@
   "author": "Pratik Mallya",
   "license": "MIT",
   "dependencies": {
+    "@types/babel__traverse": "7.0.8",
     "@actions/core": "^1.2.6",
     "@actions/github": "^2.1.0",
     "@octokit/auth": "^1.1.1",
-    "@octokit/rest": "^16.41.1",
+    "@octokit/rest": "16.41.1",
     "@octokit/webhooks": "^7.0.0",
     "@types/randomcolor": "^0.5.3",
     "codeowners": "^4.1.1",
@@ -48,6 +49,6 @@
     "js-yaml": "^3.13.1",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.9.10"
   }
 }
