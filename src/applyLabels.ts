@@ -1,4 +1,3 @@
-import * as core from '@actions/core'
 import {Context} from '@actions/github/lib/context'
 import * as github from '@actions/github'
 import * as octokit from '@octokit/rest'
@@ -27,8 +26,6 @@ export async function applyLabels(
     }
     await Promise.all(p)
   } catch (error) {
-    core.info(`Obtained error: ${error}`)
-    core.info(`Error status: ${error.status}`)
     // if 422, label already exists
     if (error.status !== "422" ) {
       throw error
